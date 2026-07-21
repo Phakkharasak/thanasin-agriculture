@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1e5">
+  <title>ธนซิน การเกษตร — สินค้า</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="catalog-page">
+    <header class="catalog-header">
+      <a class="back-button" href="index.html" aria-label="กลับหน้าเลือกการใช้งาน">‹</a>
+      <div class="catalog-brand"><strong>ธนซิน การเกษตร</strong><span></span></div>
+      <button class="cart-button" aria-label="ตะกร้าสินค้า"><i></i><b>0</b></button>
+    </header>
+    <section class="catalog-content">
+      <label class="search-box"><i></i><input id="search" placeholder="ค้นหาสินค้า" autocomplete="off"></label>
+      <article class="promo-card">
+        <div><small>ฤดูเพาะปลูก</small><strong>ลดพิเศษ 10%</strong></div>
+        <div class="promo-seeds"><i></i><i></i><i></i></div>
+      </article>
+      <nav class="category-list" aria-label="หมวดหมู่สินค้า">
+        <button class="active" data-category="ทั้งหมด">ทั้งหมด</button><button data-category="ปุ๋ย">ปุ๋ย</button><button data-category="ยาปราบศัตรูพืช">ยาปราบศัตรูพืช</button><button data-category="เมล็ดพันธุ์">เมล็ดพันธุ์</button>
+      </nav>
+      <div class="section-heading"><h1>สินค้าแนะนำ</h1><span id="count">4 รายการ</span></div>
+      <section class="product-grid" id="products">
+        <article class="product-card" data-category="ปุ๋ย" data-search="ปุ๋ยอินทรีย์ สูตรเร่งโต"><div class="product-visual"><div class="product-art bag"><span class="art-shadow"></span><span class="pack"><i class="pack-top"></i><i class="pack-label"></i><i class="pack-leaf"></i></span></div><span class="badge">แถมถุงมือ</span></div><div class="product-info"><h2>ปุ๋ยอินทรีย์</h2><p>สูตรเร่งโต</p><strong>฿450</strong></div><button class="detail-button">ดูรายละเอียด <span>→</span></button></article>
+        <article class="product-card" data-category="ยาปราบศัตรูพืช" data-search="สารป้องกันแมลง สูตรอ่อนโยนต่อพืช"><div class="product-visual"><div class="product-art bottle"><span class="art-shadow"></span><span class="pack"><i class="pack-top"></i><i class="pack-label"></i><i class="pack-leaf"></i></span></div><span class="badge">โปรโมชั่น</span></div><div class="product-info"><h2>สารป้องกันแมลง</h2><p>สูตรอ่อนโยนต่อพืช</p><strong>฿320</strong></div><button class="detail-button">ดูรายละเอียด <span>→</span></button></article>
+        <article class="product-card" data-category="เมล็ดพันธุ์" data-search="เมล็ดพันธุ์ข้าวโพด งอกไว ให้ผลผลิตดี"><div class="product-visual"><div class="product-art seed"><span class="art-shadow"></span><span class="pack"><i class="pack-top"></i><i class="pack-label"></i><i class="pack-leaf"></i></span></div><span class="badge">สินค้าแนะนำ</span></div><div class="product-info"><h2>เมล็ดพันธุ์ข้าวโพด</h2><p>งอกไว ให้ผลผลิตดี</p><strong>฿280</strong></div><button class="detail-button">ดูรายละเอียด <span>→</span></button></article>
+        <article class="product-card" data-category="ปุ๋ย" data-search="ปุ๋ยบำรุงดิน เพิ่มอินทรียวัตถุ"><div class="product-visual"><div class="product-art bag-alt"><span class="art-shadow"></span><span class="pack"><i class="pack-top"></i><i class="pack-label"></i><i class="pack-leaf"></i></span></div><span class="badge">ลดพิเศษ</span></div><div class="product-info"><h2>ปุ๋ยบำรุงดิน</h2><p>เพิ่มอินทรียวัตถุ</p><strong>฿390</strong></div><button class="detail-button">ดูรายละเอียด <span>→</span></button></article>
+      </section>
+      <div class="empty-state" id="empty" hidden>ไม่พบสินค้าที่ค้นหา</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
